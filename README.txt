@@ -1,32 +1,36 @@
-pdf_merge
-    by FIXME (your name)
-    FIXME (url)
+PDF Merge
+    by Tim Pease
+    http://github.com/TwP/pdf_merge
 
 == DESCRIPTION:
 
-FIXME (describe your package)
-
-== FEATURES/PROBLEMS:
-
-* FIXME (list of features or problems)
+Merge pages from two PDF files into a single PDF file.
 
 == SYNOPSIS:
 
-  FIXME (code sample of usage)
+If you have a single-sided scanner with a sheet feeder, you can imagine
+scanning in a set of double sided pages and producing a PDF file. This
+file will contain all the odd numbered pages (1,3,5...). Flipping the
+stack of papers over and scanning the reverse sides will produce a second
+PDF file containing the even numbered pages in reverse order (...6,4,2).
+This script will merge these two files and generate a single PDF file with
+the pages interleaved in the correct order.
 
 == REQUIREMENTS:
 
-* FIXME (list of requirements)
+This Python script only works on Mac OS X. It relies on the Quartz
+CoreGraphics framework for processing the PDF files. Any version of OS X that
+has the CoreGraphics framework should suffice for using this script.
 
 == INSTALL:
 
-* FIXME (sudo gem install, anything else)
+Place the "merge.py" script somewhere in your path.
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2009 FIXME (different license?)
+Copyright (c) 2009
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
